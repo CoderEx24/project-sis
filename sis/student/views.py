@@ -24,15 +24,17 @@ def courses(req):
     registered_courses = student.enrollment_set.filter(offering__semester=current_semester)
     registered_courses = list(map(lambda o: o.offering.course.id, registered_courses))
 
-    courses = Course.objects.exclude(Q(pk__in=passed_courses) | Q(pk__in=registered_courses)) \
-            if len(passed_courses) > 0 else Course.objects.exclude(pk__in=registered_courses)
+    courses = Offering.objects.exclude(Q(course__pk__in=passed_courses) | Q(course__pk__in=registered_courses)) \
+            if len(passed_courses) > 0 else Course.objects.exclude(course__pk__in=registered_courses)
 
-    courses = courses.exclude(pk__in=registered_courses).filter(faculty=student.major.faculty,
-                                                                minimum_level__lte=student.level)
+    courses = courses.exclude(course__pk__in=registered_courses).filter(course__faculty=student.major.faculty,
+                                                                        course__minimum_level__lte=student.level) \
+                                                                .values_list('course', flat=True)
+    courses = list(map(lambda obj: Course.object.get(pk=obj), courses))
 
     current_enrollments = student.enrollment_set.filter(offering__semester=current_semester)
 
-    print(f'{registered_courses=}')
+    print(f'{courses=}')
 
     return render(req, 'student/courses.html', {'courses': courses, 'current_enrollments': current_enrollments})
 
