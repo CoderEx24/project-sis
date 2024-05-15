@@ -141,7 +141,21 @@ def view_absense(req):
 
 @login_required(login_url='student:login')
 def view_report(req):
-    return render(req, 'student/report.html', {})
+    student = req.user.student
+    enrollments = Enrollment.objects.filter(student=student)
+    semesters = enrollments.values_list('offering__semester', flat=True) \
+                           .distinct()
+
+    semesters = {
+        f'{Semester.objects.get(pk=pk)}': [
+            *enrollments.filter(offering__semester__pk=pk)
+        ]
+        for pk in semesters
+
+    }
+    print(semesters)
+
+    return render(req, 'student/report.html', {'semesters': semesters})
 
 @login_required(login_url='student:login')
 def view_results(req, semester_pk=None):
