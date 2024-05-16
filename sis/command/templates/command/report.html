@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Student Information</title>
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/report.css">
+</head>
+<body style="background-image: url('images/cover.jpg') ; background-size: 100vw 100vh;">
+   
+   <header class="header">
+      <section class="flex">
+         <span class="Title-name">Welcome to EGYPT-JAPAN University For Science and Technology</span>
+         <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="toggle-btn" class="fas fa-sun"></div>
+         </div>
+         <div class="profile">
+            <img src="images/admin-icon.png" class="image" alt="">
+            <h3 class="name">Abdelrahamn Mohamed</h3>
+            <p class="role">Admin</p>
+            <a href="profile.html" class="btn">view profile</a>
+            <div class="flex-btn">
+               <a href="login.html" class="option-btn">logout</a>
+            </div>
+         </div>
+      </section>
+   </header>   
+   <div class="side-bar">
+      <div class="logo-details">
+         <div id="menu-btn" class="bx bx-menu"></div>
+      </div>
+      <div><span class="logo-name">EJUST</span></div>
+      <ul>
+         <nav class="navbar">
+            <li><a href="home.html"><i class="fas fa-home"></i><span class="Names">Home</span></a></li>
+            <li><a href="add student.html"><i class="fas fa-user-plus"></i><span class="Names">Add/Delete Student</span></a></li>
+            <li><a href="add doctor.html"><i class="fas fa-chalkboard-teacher"></i><span class="Names">Add/Delete Teacher</span></a></li>
+            <li><a href="add ta.html"><i class="fas fa-user-graduate"></i><span class="Names">Add/Delete TA</span></a></li>
+            <li><a href="add and delete course.html"><i class="fas fa-book"></i><span class="Names">Register/Drop Courses</span></a></li>
+            <li><a href="withdraw.html"><i class="fas fa-minus-circle"></i><span class="Names">Withdraw</span></a></li>  
+            <li><a href="Create.html"><i class="fas fa-plus-circle"></i><span class="Names">Create Course</span></a></li>                       
+            <li><a href="payment.html"><i class="fas fa-money-check-alt"></i><span class="Names">Payment</span></a></li>
+            <li><a href="report.html"style="background-color: #246997;"><i class="fas fa-file-alt"></i><span class="Names">Report</span></a> </li>
+         </nav>
+      </ul>
+   </div>
+   <div class="admin-form">
+      <h2>Enter Student ID</h2>
+      <form id="studentIdForm">
+          <input type="text" id="studentId" placeholder="Enter Student ID" required>
+          <button type="Next" style="font-size: 18px;"class="Next-btn">Confirm</button>
+      </form>
+  </div>
+   <div class="student-info">
+      <h1>Student Information</h1>
+      <p><strong>Student ID:</strong> 320210012</p>
+      <p><strong>Student Name:</strong> Mohamed Ahmed Ali Mostafa</p>
+      <p><strong>Faculty:</strong> Computer Science and Information Technology Programs</p>
+      <p><strong>Major:</strong> B.Sc. Computer Science</p>
+      <p><strong>Join Semester:</strong> 20211</p>
+      <p><strong>Degree:</strong> B.Sc</p>
+      <p><strong>Status:</strong> Enrolled</p>
+  </div>
+   <div class="container">
+      <div class="semester">
+         <h2 class="semester-title">Semester 1</h2>
+         <div class="semester-info">Total Hours: 17</div>
+         <div class="semester-info">Earned Hours: 17</div>
+         <table class="semester-table">
+            <thead>
+               <tr>
+                  <th>Course Code</th>
+                  <th>Course Name</th>
+                  <th>Prerequisite</th>
+                  <th>CH</th>
+                  <th>Mark</th>
+                  <th>Status</th>
+                  <th>Sem</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>LRA 101</td>
+                  <td>Japanese Culture</td>
+                  <td>None</td>
+                  <td>2</td>
+                  <td>B+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20211</td>
+               </tr>
+               <tr>
+                  <td>LRA 401</td>
+                  <td>Japanese Language (1)</td>
+                  <td>None</td>
+                  <td>1</td>
+                  <td>B+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20211</td>
+               </tr>
+               <tr>
+                  <td>MTH 111</td>
+                  <td>Mathematics (1)</td>
+                  <td>None</td>
+                  <td>3</td>
+                  <td>B+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20211</td>
+               </tr>
+               <tr>
+                  <td>PHY 113</td>
+                  <td>Physics (1)</td>
+                  <td>None</td>
+                  <td>3</td>
+                  <td>B+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20211</td>
+               </tr>
+               <tr>
+                  <td>CSC 111</td>
+                  <td>Fundamentals of Programming</td>
+                  <td>None</td>
+                  <td>3</td>
+                  <td>B+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20211</td>
+               </tr>
+               <tr>
+                  <td>LRA 110</td>
+                  <td>Modern Egyptian History</td>
+                  <td>None</td>
+                  <td>2</td>
+                  <td>B+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20211</td>
+               </tr>
+               <td>LRA 102 </td>
+               <td>Introduction to Philosophy</td>
+               <td>None</td>
+               <td>2</td>
+               <td>[ ]</td>
+               <td class="status-column">
+                  <div class="status-subcolumn">[ ]</div>
+                  <div class="status-subcolumn">[ ]</div>
+               </td>
+               <td>[ ]</td>
+            </tr>
+               <tr>
+                  <td>ECE 111</td>
+                  <td>Digital Logic Design</td>
+                  <td>None</td>
+                  <td>3</td>
+                  <td>B+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20211</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      
+      <div class="semester">
+         <h2 class="semester-title">Semester 2</h2>
+         <div class="semester-info">Total Hours: 17</div>
+         <div class="semester-info">Earned Hours: 17</div>
+         <table class="semester-table">
+            <thead>
+               <tr>
+                  <th>Course Code</th>
+                  <th>Course Name</th>
+                  <th>Prerequisite</th>
+                  <th>CH</th>
+                  <th>Mark</th>
+                  <th>Status</th>
+                  <th>Sem</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>LRA 402</td>
+                  <td>Japanese Language (2)</td>
+                  <td>LRA 401</td>
+                  <td>1</td>
+                  <td>B+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20212</td>
+               </tr>
+               <tr>
+                  <td>MTH 121</td>
+                  <td>Mathematics (2)</td>
+                  <td>MTH 111</td>
+                  <td>3</td>
+                  <td>B+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20212</td>
+               </tr>
+               <tr>
+                  <td>PHY 123</td>
+                  <td>Physics (2)</td>
+                  <td>PHY 113</td>
+                  <td>3</td>
+                  <td>B+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20212</td>
+               </tr>
+               <tr>
+                  <td>CSC 121</td>
+                  <td>Data Structures and Algorithms</td>
+                  <td>CSC 111</td>
+                  <td>3</td>
+                  <td>B+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20212</td>
+               </tr>
+               <tr>
+                  <td>LRA 203</td>
+                  <td>Entrepreneurship and Innovation</td>
+                  <td>None</td>
+                  <td>2</td>
+                  <td>B+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20212</td>
+               </tr>
+               <tr>
+                  <td>LRA 201</td>
+                  <td>Introduction to Economics and Sustainable Development</td>
+                  <td>None</td>
+                  <td>2</td>
+                  <td>[ ]</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">[ ]</div>
+                     <div class="status-subcolumn">[ ]</div>
+                  </td>
+                  <td>[ ]</td>
+               </tr>
+               <tr>
+                  <td>CSC 122</td>
+                  <td>Advanced Programming</td>
+                  <td>CSC 111</td>
+                  <td>3</td>
+                  <td>B+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20212</td>
+               </tr>
+               <tr>
+                  <td>LRA 405</td>
+                  <td>Key skill seminar (1)</td>
+                  <td>None</td>
+                  <td>2</td>
+                  <td>B+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20212</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>    
+      <div class="semester">
+         <h2 class="semester-title">Semester 3</h2>
+         <div class="semester-info">Total Hours: 18</div>
+         <div class="semester-info">Earned Hours: 18</div>
+         <table class="semester-table">
+            <thead>
+               <tr>
+                  <th>Course Code</th>
+                  <th>Course Name</th>
+                  <th>Prerequisite</th>
+                  <th>CH</th>
+                  <th>Mark</th>
+                  <th>Status</th>
+                  <th>Sem</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>LRA 403</td>
+                  <td>Japanese Language (3)</td>
+                  <td>LRA 402</td>
+                  <td>1</td>
+                  <td>B+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20221</td>
+               </tr>
+               <tr>
+                  <td>LRA 410</td>
+                  <td>Fundamentals of Communication</td>
+                  <td>None</td>
+                  <td>2</td>
+                  <td>B+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20221</td>
+               </tr>
+               <tr>
+                  <td>LRA 406 </td>
+                  <td>Key skills seminar (2)</td>
+                  <td>None</td>
+                  <td>2</td>
+                  <td>[ ]</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">[ ]</div>
+                     <div class="status-subcolumn">[ ]</div>
+                  </td>
+                  <td>[ ]</td>
+               </tr>
+               <tr>
+                  <td>MTH 212</td>
+                  <td>Probability and Statistics</td>
+                  <td>MTH 121</td>
+                  <td>3</td>
+                  <td>B+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20221</td>
+               </tr>
+               <tr>
+                  <td>ACM 215</td>
+                  <td>Ordinary Differential Equations</td>
+                  <td>MTH 121</td>
+                  <td>3</td>
+                  <td>B+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20221</td>
+               </tr>
+               <tr>
+                  <td>BIO 111</td>
+                  <td>Fundamentals of life Science</td>
+                  <td>None</td>
+                  <td>3</td>
+                  <td>[ ]</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">[ ]</div>
+                     <div class="status-subcolumn">[ ]</div>
+                  </td>
+                  <td>[ ]</td>
+               </tr>
+               <tr>
+                  <td>CSC 211</td>
+                  <td>Software Engineering</td>
+                  <td>CSC 122</td>
+                  <td>3</td>
+                  <td>B+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20221</td>
+               </tr>
+               <tr>
+                  <td>CNC 111</td>
+                  <td>Networks and Web Programming</td>
+                  <td>CSC 122</td>
+                  <td>3</td>
+                  <td>B+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20221</td>
+               </tr>
+               <tr>
+                  <td>CNC 114</td>
+                  <td>Algorithms Analysis and Design</td>
+                  <td>CSC 121</td>
+                  <td>3</td>
+                  <td>[ ]</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">[ ]</div>
+                     <div class="status-subcolumn">[ ]</div>
+                  </td>
+                  <td>[ ]</td>
+               </tr>
+               <tr>
+                  <td>CSE 311</td>
+                  <td>Computer Organization</td>
+                  <td>ECE 111</td>
+                  <td>3</td>
+                  <td>B+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20221</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="semester">
+         <h2 class="semester-title">Semester 4</h2>
+         <div class="semester-info">Total Hours: 17</div>
+         <div class="semester-info">Earned Hours: 17</div>
+         <table class="semester-table">
+            <thead>
+               <tr>
+                  <th>Course Code</th>
+                  <th>Course Name</th>
+                  <th>Prerequisite</th>
+                  <th>CH</th>
+                  <th>Mark</th>
+                  <th>Status</th>
+                  <th>Sem</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>LRA 404</td>
+                  <td>Japanese Language (4)</td>
+                  <td>LRA 403</td>
+                  <td>1</td>
+                  <td>C+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20222</td>
+               </tr>
+               <tr>
+                  <td>LRA 208</td>
+                  <td>Safety and Risk Management</td>
+                  <td>None</td>
+                  <td>2</td>
+                  <td>C+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20222</td>
+               </tr>
+               <tr>
+                  <td>LRA 410</td>
+                  <td>Fundamentals of Communication</td>
+                  <td>None</td>
+                  <td>2</td>
+                  <td>C+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20222</td>
+               </tr>
+               <tr>
+                  <td>LRA 406</td>
+                  <td>Key skills seminar (2)</td>
+                  <td>None</td>
+                  <td>2</td>
+                  <td>[ ]</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">[ ]</div>
+                     <div class="status-subcolumn">[ ]</div>
+                  </td>
+                  <td>[ ]</td>
+               </tr>
+               <tr>
+                  <td>CSE 312</td>
+                  <td>Discrete Mathematics</td>
+                  <td>MTH 121</td>
+                  <td>3</td>
+                  <td>C+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20222</td>
+               </tr>
+               <tr>
+                  <td>CHM 113 </td>
+                  <td>Chemistry I</td>
+                  <td>None</td>
+                  <td>3</td>
+                  <td>B+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20222</td>
+               </tr>
+               <tr>
+                  <td>ACM 323 </td>
+                  <td>Applied Numerical Methods</td>
+                  <td>MTH 111</td>
+                  <td>3</td>
+                  <td>[ ]</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">[ ]</div>
+                     <div class="status-subcolumn">[ ]</div>
+                  </td>
+                  <td>[ ]</td>
+               </tr>
+               <tr>
+                  <td>AID 111</td>
+                  <td>Data Science</td>
+                  <td>None</td>
+                  <td>3</td>
+                  <td>B+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20222</td>
+               </tr>
+               <tr>
+                  <td>CSC 113</td>
+                  <td>Compiler Design</td>
+                  <td>CSC 122 + CSC 311</td>
+                  <td>3</td>
+                  <td>[ ]</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">[ ]</div>
+                     <div class="status-subcolumn">[ ]</div>
+                  </td>
+                  <td>[ ]</td>
+               </tr>
+               <tr>
+                  <td>CSC 221</td>
+                  <td>Operating Systems</td>
+                  <td>CSE 311</td>
+                  <td>3</td>
+                  <td>C+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20222</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="semester">
+         <h2 class="semester-title">Semester 5</h2>
+         <div class="semester-info">Total Hours: 15</div>
+         <div class="semester-info">Earned Hours: 15</div>
+         <table class="semester-table">
+            <thead>
+               <tr>
+                  <th>Course Code</th>
+                  <th>Course Name</th>
+                  <th>Prerequisite</th>
+                  <th>CH</th>
+                  <th>Mark</th>
+                  <th>Status</th>
+                  <th>Sem</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>CNC 311</td>
+                  <td>Computer Networks</td>
+                  <td>MTH 212 + CSC 121</td>
+                  <td>3</td>
+                  <td>C+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20231</td>
+               </tr>
+               <tr>
+                  <td>AID 312</td>
+                  <td>Intelligent Systems</td>
+                  <td>MTH 121 + CSC 122</td>
+                  <td>3</td>
+                  <td>C+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20231</td>
+               </tr>
+               <tr>
+                  <td>CNC 314</td>
+                  <td>Database Systems</td>
+                  <td>CSC 122</td>
+                  <td>3</td>
+                  <td>C+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20231</td>
+               </tr>
+               <tr>
+                  <td>CSE 423</td>
+                  <td>Computer Graphics and Visualization</td>
+                  <td>MTH 121</td>
+                  <td>3</td>
+                  <td>C+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20231</td>
+               </tr>
+               <tr>
+                  <td>CSC 112</td>
+                  <td>Project Management</td>
+                  <td>None</td>
+                  <td>3</td>
+                  <td>[ ]</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">[ ]</div>
+                     <div class="status-subcolumn">[ ]</div>
+                  </td>
+                  <td>[ ]</td>
+               </tr>
+               <tr>
+                  <td>CSC 314</td>
+                  <td>Software Modeling and Analysis</td>
+                  <td>CSC 122</td>
+                  <td>3</td>
+                  <td>C+</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Pass</div>
+                     <div class="status-subcolumn">Active</div>
+                  </td>
+                  <td>20231</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="semester">
+         <h2 class="semester-title">Semester 6</h2>
+         <div class="semester-info">Total Hours: 18</div>
+         <div class="semester-info">Earned Hours: [ ]</div>
+         <table class="semester-table">
+            <thead>
+               <tr>
+                  <th>Course Code</th>
+                  <th>Course Name</th>
+                  <th>Prerequisite</th>
+                  <th>CH</th>
+                  <th>Mark</th>
+                  <th>Status</th>
+                  <th>Sem</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>CSC 321</td>
+                  <td>Software Design</td>
+                  <td>CSC 314</td>
+                  <td>3</td>
+                  <td>[ ]</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Active</div>
+                     <div class="status-subcolumn">X</div>
+                  </td>
+                  <td>20232</td>
+               </tr>
+               <tr>
+                  <td>CSC 322</td>
+                  <td>Requirements Analysis and Specification</td>
+                  <td>CSC 211</td>
+                  <td>3</td>
+                  <td>[ ]</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Active</div>
+                     <div class="status-subcolumn">X</div>
+                  </td>
+                  <td>20232</td>
+               </tr>
+               <tr>
+                  <td>CSC 323</td>
+                  <td>Software Process</td>
+                  <td>CSC 211</td>
+                  <td>3</td>
+                  <td>[ ]</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Active</div>
+                     <div class="status-subcolumn">X</div>
+                  </td>
+                  <td>20232</td>
+               </tr>
+               <tr>
+                  <td>CSC 324</td>
+                  <td>Human-Computer Interaction</td>
+                  <td>CSC 121</td>
+                  <td>3</td>
+                  <td>[ ]</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Active</div>
+                     <div class="status-subcolumn">X</div>
+                  </td>
+                  <td>20232</td>
+               </tr>
+               <tr>
+                  <td>CSC 425 </td>
+                  <td>Soft Computing</td>
+                  <td>AID 312</td>
+                  <td>3</td>
+                  <td>[ ]</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Active</div>
+                     <div class="status-subcolumn">X</div>
+                  </td>
+                  <td>20232</td>
+               </tr>
+               <tr>
+                  <td>CSC 426 </td>
+                  <td>Distributed Systems</td>
+                  <td>CSE 311 + CSC 313</td>
+                  <td>3</td>
+                  <td>[ ]</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">[ ]</div>
+                     <div class="status-subcolumn">[ ]</div>
+                  </td>
+                  <td>[ ]</td>
+               </tr>
+               <tr>
+                  <td>AID 426</td>
+                  <td>Robotics</td>
+                  <td>MTH 121</td>
+                  <td>3</td>
+                  <td>[ ]</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">Active</div>
+                     <div class="status-subcolumn">X</div>
+                  </td>
+                  <td>20232</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="semester">
+         <h2 class="semester-title">Semester 7</h2>
+         <div class="semester-info">Total Hours: 17</div>
+         <div class="semester-info">Earned Hours: [ ]</div>
+         <table class="semester-table">
+            <thead>
+               <tr>
+                  <th>Course Code</th>
+                  <th>Course Name</th>
+                  <th>Prerequisite</th>
+                  <th>CH</th>
+                  <th>Mark</th>
+                  <th>Status</th>
+                  <th>Sem</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>CSC 410</td>
+                  <td>Software Quality</td>
+                  <td>CSC 323</td>
+                  <td>3</td>
+                  <td>[ ]</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">[ ]</div>
+                     <div class="status-subcolumn">[ ]</div>
+                  </td>
+                  <td>[ ]</td>
+               </tr>
+               <tr>
+                  <td>CSC 411</td>
+                  <td>Software Verification and Validation</td>
+                  <td>CSC 321</td>
+                  <td>3</td>
+                  <td>[ ]</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">[ ]</div>
+                     <div class="status-subcolumn">[ ]</div>
+                  </td>
+                  <td>[ ]</td>
+               </tr>
+               <tr>
+                  <td>CSC 412</td>
+                  <td>Software Security</td>
+                  <td>CSC 321</td>
+                  <td>3</td>
+                  <td>[ ]</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">[ ]</div>
+                     <div class="status-subcolumn">[ ]</div>
+                  </td>
+                  <td>[ ]</td>
+               </tr>
+               <tr>
+                  <td>CSC 429 </td>
+                  <td>Embedded Systems</td>
+                  <td>CSE 311</td>
+                  <td>3</td>
+                  <td>[ ]</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">[ ]</div>
+                     <div class="status-subcolumn">[ ]</div>
+                  </td>
+                  <td>[ ]</td>
+               </tr>
+               <tr>
+                  <td>CSC 418 </td>
+                  <td>Mobile Software Engineering</td>
+                  <td>CNC 311</td>
+                  <td>3</td>
+                  <td>[ ]</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">[ ]</div>
+                     <div class="status-subcolumn">[ ]</div>
+                  </td>
+                  <td>[ ]</td>
+               </tr>
+               <tr>
+                  <td>CSC 414</td>
+                  <td>Game Design & Development</td>
+                  <td>CSC 211</td>
+                  <td>3</td>
+                  <td>[ ]</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">[ ]</div>
+                     <div class="status-subcolumn">[ ]</div>
+                  </td>
+                  <td>[ ]</td>
+               </tr>
+               <tr>
+                  <td>CSC 413</td>
+                  <td>Project I</td>
+                  <td>None</td>
+                  <td>2</td>
+                  <td>[ ]</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">[ ]</div>
+                     <div class="status-subcolumn">[ ]</div>
+                  </td>
+                  <td>[ ]</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="semester">
+         <h2 class="semester-title">Semester 8</h2>
+         <div class="semester-info">Total Hours: 15</div>
+         <div class="semester-info">Earned Hours: [ ]</div>
+         <table class="semester-table">
+            <thead>
+               <tr>
+                  <th>Course Code</th>
+                  <th>Course Name</th>
+                  <th>Prerequisite</th>
+                  <th>CH</th>
+                  <th>Mark</th>
+                  <th>Status</th>
+                  <th>Sem</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>CSC 415</td>
+                  <td>New Trends in Computer Science</td>
+                  <td>CSC 211</td>
+                  <td>3</td>
+                  <td>[ ]</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">[ ]</div>
+                     <div class="status-subcolumn">[ ]</div>
+                  </td>
+                  <td>[ ]</td>
+               </tr>
+               <tr>
+                  <td>CSC 421</td>
+                  <td>New Trends in Game Design</td>
+                  <td>CSC 414</td>
+                  <td>3</td>
+                  <td>[ ]</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">[ ]</div>
+                     <div class="status-subcolumn">[ ]</div>
+                  </td>
+                  <td>[ ]</td>
+               </tr>
+               <tr>
+                  <td>CSC 422</td>
+                  <td>Fundamentals of Cloud Computing</td>
+                  <td>CNC 311</td>
+                  <td>3</td>
+                  <td>[ ]</td>
+                  <td class="status-column">
+                     <div class="status-subcolumn">[ ]</div>
+                     <div class="status-subcolumn">[ ]</div>
+                  </td>
+                  <td>[ ]</td>
+               </tr>
+               <tr>
+                  <td>CSC 423</td>
+                  <td>Field Training</td>
+                  <td>None</td>
+                  <td>5</td>
+                  <td>[ ]</td>
+                  <td class="status-column">
+                      <div class="status-subcolumn">[ ]</div>
+                      <div class="status-subcolumn">[ ]</div>
+                  </td>
+                  <td>[ ]</td>
+               </tr>
+               <tr>
+                  <td>CSC 424</td>
+                  <td>Project II</td>
+                  <td>CSC 413</td>
+                  <td>4</td>
+                  <td>[ ]</td>
+                  <td class="status-column">
+                      <div class="status-subcolumn">[ ]</div>
+                      <div class="status-subcolumn">[ ]</div>
+                     
+                  </td>
+                  <td>[ ]</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="semester">
+         <h2 class="semester-title">Summer Courses</h2>
+         <div class="semester-info">Total Hours: [ ]</div>
+         <div class="semester-info">Earned Hours: [ ]</div>
+         <table class="semester-table">
+            <thead>
+               <tr>
+                  <th>Course Code</th>
+                  <th>Course Name</th>
+                  <th>Prerequisite</th>
+                  <th>CH</th>
+                  <th>Mark</th>
+                  <th>Status</th>
+                  <th>Sem</th>
+               </tr>
+            </thead>
+            <tbody>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td class="status-column">
+                     <div class="status-subcolumn"></div>
+                     <div class="status-subcolumn"></div>
+                  </td>
+                  <td></td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="academic-info">
+         <div>
+           Attempted Hrs: 105<br>
+           Earned Hrs: 75<br>
+           Plan Hrs: 134<br>
+           Remain Hrs: 59<br>
+         </div>
+         <div>
+           Graded Hrs: 0<br>
+           Grade: Good<br>
+           CGPA: 2.30<br>
+           Student Level: Three Year Student<br>
+         </div>
+       </div>
+   </div>
+
+   <script src="js/script.js"></script>
+</body>
+</html>
